@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import imglogin from "../../assets/BBS.jpg";
-export default function Register(){
+export default function RegisterMember(){
     return(
         <div className="relativ w-full bg-zinc-900/40 text-white h-[100vh] flex justify-center items-center ">
       <img
@@ -9,7 +9,7 @@ export default function Register(){
         className="absolute w-full h-full object-cover mix-blend-color-burn"
       />
       <div className="">
-        <div className="bg-gray-900 border border-gray-400 rounded-md p-20 shadow-lg  backdrop-blur-lg bg-opacity-20 relative">
+        <div className="bg-gray-900 border border-gray-400 rounded-md px-[79px] py-[10px] shadow-lg  backdrop-blur-lg bg-opacity-20 relative">
           <h1 className="text-4xl text-white font-bold text-center mb-10">
             Member Register
           </h1>
@@ -90,7 +90,7 @@ export default function Register(){
               <span>
                 Already Create an Account?{" "}
                 <Link
-                  to="/Login"
+                  to="/LoginMember"
                   className="font-bold text-emerald-300 hover:text-emerald-400 duration-300 hover:text-sm"
                 >
                   Login{" "}
