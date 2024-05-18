@@ -5,16 +5,24 @@ import RegisterMember from './components/LoginRegister/RegisterMember'
 import LoginManager from './components/LoginRegister/LoginManager'
 import RegisterManager from './components/LoginRegister/RegisterManager'
 function App() {
+ 
   return (
-    <div className=' justify-center flex items-center bg-cover'>
+    <div className='justify-center flex items-center bg-cover'>
+  
       <Routes>
-      <Route path='/' element={<LoginMember/>}></Route>
-      <Route path='loginMember' element={<LoginMember/>}></Route>
-      <Route path='RegisterMember' element={<RegisterMember/>}></Route>
-      <Route path='LoginManager' element={<LoginManager/>}></Route>
-      <Route path='RegisterManager' element={<RegisterManager/>}></Route>
+        <Route path='/' element={<LoginMember />} />
+
+        <Route path='loginMember' element={<LoginMember />} />
+        <Route path='registerMember' element={<RegisterMember />} />
+
+
+        <Route path='loginManager' element={<LoginManager />} />
+        <Route path='registerManager' element={<RegisterManager />} />
+
+        
       </Routes>
-    </div>
+
+  </div>
   )
 }
 
