@@ -1,8 +1,8 @@
 import BG from "../../assets/BG.mp4";
 import { Link } from "react-router-dom";
-import imglogin from "../../assets/imglogin1.jpg";
+import imglogin from "../../assets/BBS.jpg";
 
-export default function LoginRegister() {
+export default function Login() {
   return (
     <div className="relativ w-full bg-zinc-900/40 text-white h-[100vh] flex justify-center items-center ">
       <img
@@ -60,7 +60,7 @@ export default function LoginRegister() {
               <span>
                 Not a member?{" "}
                 <Link
-                  to="Register"
+                  to="/Register"
                   className="font-bold text-emerald-300 hover:text-emerald-400 duration-300 hover:text-sm"
                 >
                   Create an Account{" "}
