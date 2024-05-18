@@ -1,16 +1,24 @@
-import React from 'react'
 import { Link } from "react-router-dom";
-import imglogin from "../../assets/BBS.jpg";
+import imglogin from "../../assets/ImageLogin/BBS.jpg";
+import ImageLogo from "../../assets/ImageLogo/imageLogo.png";
+
+import React from "react";
 const LoginManager = () => {
   return (
     <div className="relativ w-full bg-zinc-900/40 text-white h-[100vh] flex justify-center items-center ">
+      <img
+        src={ImageLogo}
+        alt="Logo"
+        className=" max-sm:hidden  w-[200px] z-50  md:w-[600px] md:h-100vh  object-cover"
+      />
+
       <img
         src={imglogin}
         alt=""
         className="absolute w-full h-full object-cover mix-blend-color-burn"
       />
       <div className="">
-        <div className="bg-gray-900 border border-gray-400 rounded-md p-20 shadow-lg  backdrop-blur-lg bg-opacity-20 relative">
+        <div className="bg-gray-900 border border-gray-400 rounded-md p-20 shadow-lg sm:backdrop-blur-lg backdrop-blur-0   bg-opacity-20 relative">
           <h1 className="text-4xl text-white font-bold text-center mb-10">
             Manager Login
           </h1>
@@ -70,7 +78,7 @@ const LoginManager = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoginManager
+export default LoginManager;
