@@ -6,14 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-
+      colors:{
+        limegreen:'#c9f31d'
+      },
+      fontFamily:{
+        ubuntu:['Ubuntu Sans', 'sans-serif']
+      }
     },
     screens: {
       'sm': '576px',
-
-
       'md': '960px',
-
+      'lg': '1024px',
     },
     plugins: [],
   }

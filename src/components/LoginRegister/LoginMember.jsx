@@ -10,7 +10,7 @@ const LoginMember = () => {
       <img
         src={ImageLogo}
         alt="Logo"
-        className=" max-sm:hidden w-[200px] z-50  md:w-[600xp]  md:h-100vh   object-cover"
+        className=" max-sm:hidden w-[200px] z-50  md:w-[600xp]  md:h-100vh   object-cover "
       />
 
       <img

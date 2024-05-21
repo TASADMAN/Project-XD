@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterMember from "./components/LoginRegister/RegisterMember";
 import LoginManager from "./components/LoginRegister/LoginManager";
 import RegisterManager from "./components/LoginRegister/RegisterManager";
+import MainPage from "./components/MainPage/MainPage";
 function App() {
   return (
-    <div className="justify-center flex items-center bg-cover">
+    <div className="">
       <Routes>
         <Route path="/" element={<LoginMember />} />
 
@@ -15,9 +16,9 @@ function App() {
 
         <Route path="loginManager" element={<LoginManager />} />
         <Route path="registerManager" element={<RegisterManager />} />
+
+        <Route path="mainpage" element={<MainPage />} />
       </Routes>
-      <div>
-      </div>
     </div>
   );
 }
