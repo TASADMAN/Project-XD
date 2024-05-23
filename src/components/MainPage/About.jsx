@@ -9,6 +9,7 @@ export default function About(){
             offset: 200,
             duration: 400,
             easing: "ease-in-sine"
+            
         });
     }, [])
     return(
