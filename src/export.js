@@ -47,25 +47,25 @@ export const counts = [
 
 export const pricingplan = [
   {
-    type: "Life Plan",
-    about: "Perfect choice for individual",
-    price: "$29.00",
-    label: "Get Start now",
-    specs: "Lite includes:",
+    type: "Basketball",
+    // about: "Perfect choice for individual",
+    // price: "$29.00",
+    // label: "Get Start now",
+    // specs: "Lite includes:",
   },
   {
-    type: "Pro Plan",
-    about: "Everything in pro, plus",
-    price: "$39.00",
-    label: "Get Start now",
-    specs: "Everything in lite, plus:",
+    type: "Football",
+    // about: "Everything in pro, plus",
+    // price: "$39.00",
+    // label: "Get Start now",
+    // specs: "Everything in lite, plus:",
   },
   {
-    type: "Ultimate Plan",
-    about: "Perfect choice for hard players",
-    price: "$49.00",
-    label: "Get Start now",
-    specs: "Everything in pro, plus:",
+    type: "Futsal",
+    // about: "Perfect choice for hard players",
+    // price: "$49.00",
+    // label: "Get Start now",
+    // specs: "Everything in pro, plus:",
   },
 ];
 
