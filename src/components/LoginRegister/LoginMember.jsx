@@ -3,6 +3,7 @@ import imglogin from "../../assets/ImageLogin/BBS.jpg";
 import ImageLogo from "../../assets/ImageLogo/imageLogo.png";
 
 import React from "react";
+import MainPage from "../MainPage/MainPage";
 
 const LoginMember = () => {
   return (
@@ -10,7 +11,7 @@ const LoginMember = () => {
       <img
         src={ImageLogo}
         alt="Logo"
-        className=" max-sm:hidden w-[200px] z-50  md:w-[600xp]  md:h-100vh   object-cover "
+        className=" max-sm:hidden w-[600px] z-50  md:w-[600xp]  md:h-100vh   object-cover "
       />
 
       <img
@@ -63,7 +64,7 @@ const LoginMember = () => {
               className="w-full mb-4 text-[18px] font-bold mt-6 rounded-full bg-white text-emerald-800 hover:text-white hover:bg-emerald-400 py-2  duration-200  transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
               type="submit"
             >
-              Sign In
+              Sign In <Link to='/mainpage'></Link>
             </button>
             <div>
               <span>
