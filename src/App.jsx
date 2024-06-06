@@ -6,6 +6,7 @@ import LoginManager from "./components/LoginRegister/LoginManager";
 import RegisterManager from "./components/LoginRegister/RegisterManager";
 import MainPage from "./components/MainPage/MainPage";
 import LoginPage from './components/LoginPage/MainPage'
+import EditeProfile from "./components/EditeProfile/EditeProfile";
 function App() {
   return (
     <div className="">
@@ -20,6 +21,9 @@ function App() {
 
         <Route path="/mainpage" element={<MainPage />} />
         <Route path="/loginpage" element={<LoginPage />} />
+
+        <Route path="/editeprofile" element={<EditeProfile />} />
+
         
       </Routes>
     </div>
