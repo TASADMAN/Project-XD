@@ -70,7 +70,7 @@ export default function Header() {
     // },
   ];
   return (
-    <nav className="w-full flex bg-black justify-between items-center gap-1 lg:px-16 px-6 py-1 sticky top-0 z-50">
+    <nav className="w-full flex bg-black justify-between items-center gap-1 lg:px-16 px-6 py-1 sticky top-0 z-50 ">
       <div className="flex justify-center items-center gap-2">
         <img src={imageLogo2} alt="" className="lg:w-12 w-10 uppercase " />
         <h1 className=" text-white md:text-4xl text-2xl font-bold font-ubuntu">
