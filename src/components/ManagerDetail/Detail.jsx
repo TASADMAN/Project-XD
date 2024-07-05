@@ -4,11 +4,8 @@ import Services from "./Event";
 import About from "./About";
 import Location from "./Location";
 import Comment from "./Comment";
-// import Counter from "./Counter";
-// import Pricing from "./Pricing";
-// import Clients from "./Clients";
-// import Contact from "./Contact";
-// import Footer from "./Footer";
+import FieldMain from "./FieldMain";
+import Field  from "./Field";
 
 
 export default function Detail(){
@@ -17,7 +14,9 @@ export default function Detail(){
         <Header/>
         <Hero/>
         <Services/>
-        <About/>
+        <FieldMain/>
+        {/* <About/> */}
+        <Field/>
         <Location/>
         <Comment/>
         </>

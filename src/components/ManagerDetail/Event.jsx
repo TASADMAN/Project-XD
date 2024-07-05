@@ -1,11 +1,7 @@
 import { useEffect } from "react";
-// import { FaArrowRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../export.js";
-// import { servicesinfo } from "../../export.js";
-import { FaChevronCircleRight } from "react-icons/fa";
-import { pricingplan } from "../../export.js";
 import Slider from "react-slick";
 import Image1 from "../../assets/hero/womens.png";
 import Image2 from "../../assets/hero/shopping.png";
