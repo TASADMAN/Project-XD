@@ -5,8 +5,10 @@ import RegisterMember from "./components/LoginRegister/RegisterMember";
 import LoginManager from "./components/LoginRegister/LoginManager";
 import RegisterManager from "./components/LoginRegister/RegisterManager";
 import MainPage from "./components/MainPage/MainPage";
-import LoginPage from './components/LoginPage/MainPage'
+import LoginPage from "./components/LoginPage/MainPage";
 import EditeProfile from "./components/EditeProfile/EditeProfile";
+import ManagerDetail from "./components/ManagerDetail/Detail";
+
 function App() {
   return (
     <div className="">
@@ -24,7 +26,7 @@ function App() {
 
         <Route path="/editeprofile" element={<EditeProfile />} />
 
-        
+        <Route path="/managerdetail" element={<ManagerDetail />} />
       </Routes>
     </div>
   );
