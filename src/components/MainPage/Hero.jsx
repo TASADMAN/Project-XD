@@ -4,31 +4,31 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Slider from "react-slick";
-import Image1 from "../../assets/hero/womens.png";
-import Image2 from "../../assets/hero/shopping.png";
-import Image3 from "../../assets/hero/sale.png";
+import Image1 from "../../assets/hero/event01.png";
+import Image2 from "../../assets/hero/event02.png";
+import Image3 from "../../assets/hero/event03.png";
 
 const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    title: "SOCCER FOOTBALL TOUNAMENT",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "เปิดรับสมัครนักฟุตบอล 16 ทีม (รุ่นประชาชน Open) แข่งขันชิงเงินรางวัลมูลค่ารวม 25,000 บาท.",
   },
   {
     id: 2,
     img: Image2,
-    title: "30% off on all Women's Wear",
+    title: "SOCCER FOOTBALL TOUNAMENT",
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "เปิดรับสมัครนักฟุตบอล 16 ทีม (รุ่นประชาชน Open) แข่งขันชิงเงินรางวัลมูลค่ารวม 25,000 บาท.",
   },
   {
     id: 3,
     img: Image3,
-    title: "70% off on all Products Sale",
+    title: "BASKETBALL TOUNAMENT",
     description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "เปิดรับสมัครนักฟุตบอล 16 ทีม (รุ่นประชาชน Open) แข่งขันชิงเงินรางวัลมูลค่ารวม 25,000 บาท.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function Hero() {
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105
+                      className="w-[325px] h-[325px] sm:h-[400px] sm:w-[470px] sm:scale-105
                          lg:scale-120  object-contain mx-auto"
                     />
                   </div>

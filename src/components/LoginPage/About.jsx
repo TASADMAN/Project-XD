@@ -1,8 +1,8 @@
 import about from "../../assets/ImageMain/about.png";
 import { FaStar } from "react-icons/fa";
-import Img1 from "../../assets/shirt/shirt.png";
-import Img2 from "../../assets/shirt/shirt2.png";
-import Img3 from "../../assets/shirt/shirt3.png";
+import Img1 from "../../assets/shirt/S001.jpg";
+import Img2 from "../../assets/shirt/S004.jpg";
+import Img3 from "../../assets/shirt/S002.jpg";
 import { FaChevronCircleRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -61,7 +61,7 @@ export default function About() {
       className=" w-[100%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-20"
     >
       <div className="container">
-        <div className="text-left mb-24">
+        <div className="text-left mb-[160px]">
           <p data-aos="fade-up" className="text-sm text-primary">
             Top Stadium for you
           </p>
@@ -70,21 +70,21 @@ export default function About() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20  md:gap-5 place-items-center ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[100px]  md:gap-5 place-items-center ">
           {ProductsData.map((data) => (
             <div
               data-aos="zoom-in"
-              className="rounded-2xl px-5  hover:bg-black
-             dark:hover:bg-limegreenm hover:text-white ralative  shadow-xl duration-300 group max-w-[300px]  mb-[4rem]"
+              className="rounded-2xl px-20  hover:bg-black
+             dark:hover:bg-limegreenm hover:text-white ralative  shadow-xl duration-300 group max-w-[480px]  mb-[170px]"
             >
-              <div className="h-[100px]">
+              <div className="h-[100px] mb-[60px]">
                 <img
                   src={data.img}
                   alt=""
-                  className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-150 duration-300 drop-shadow-md"
+                  className="max-w-[320px] block  transform -translate-y-20 group-hover:scale-150 duration-300 drop-shadow-md rounded-md"
                 />
               </div>
-              <div className="p-4 text-center">
+              <div className="p-10 text-center ">
                 <div className="w-full flex items-center justify-center gap-1">
                   <FaStar className="text-primary" />
                   <FaStar className="text-primary" />

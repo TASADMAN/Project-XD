@@ -31,10 +31,7 @@ export default function Services() {
                             <button className=" w-full bg-limegreen font-semibold rounded-xl px-6 py-3 text-lg hover:bg-white hover:text-black font-ubuntu">{item.label}</button>
                             <p className=" text-white text-lg font-semibold font-ubuntu">{item.specs}</p>
                             <div className=" flex flex-col justify-center items-start gap-4">
-                                <p className=" text-white flex justify-center items-center gap-4 font-ubuntu"><FaChevronCircleRight className=" text-limegreen size-6"/>Powerful admin panel</p>
-                                <p className=" text-white flex justify-center items-center gap-4 font-ubuntu"><FaChevronCircleRight className=" text-limegreen size-6"/>1 Native android app</p>
-                                <p className=" text-white flex justify-center items-center gap-4 font-ubuntu"><FaChevronCircleRight className=" text-limegreen size-6"/>Multi language sopport</p>
-                                <p className=" text-white flex justify-center items-center gap-4 font-ubuntu"><FaChevronCircleRight className=" text-limegreen size-6"/>support team here</p>
+                                
                             </div>
                         </div>
                     ))

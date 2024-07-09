@@ -1,6 +1,9 @@
 import icon1 from "../src/assets/ImageMain/icon1.png";
 import icon2 from "../src/assets/ImageMain/icon2.png";
 import icon3 from "../src/assets/ImageMain/icon3.png";
+import IMG_Bas from "../src/assets/ImageMain/bas.jpg";
+import IMG_Ball from "../src/assets/ImageMain/ball.jpg";
+import IMG_Footsal from "../src/assets/ImageMain/footsal.jpg";
 
 export const servicesinfo = [
   {
@@ -48,6 +51,7 @@ export const counts = [
 export const pricingplan = [
   {
     type: "Basketball",
+    img: IMG_Bas,
     // about: "Perfect choice for individual",
     // price: "$29.00",
     // label: "Get Start now",
@@ -55,6 +59,7 @@ export const pricingplan = [
   },
   {
     type: "Football",
+    img: IMG_Ball,
     // about: "Everything in pro, plus",
     // price: "$39.00",
     // label: "Get Start now",
@@ -62,6 +67,7 @@ export const pricingplan = [
   },
   {
     type: "Futsal",
+    img: IMG_Footsal,
     // about: "Perfect choice for hard players",
     // price: "$49.00",
     // label: "Get Start now",
