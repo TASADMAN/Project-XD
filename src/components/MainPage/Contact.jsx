@@ -24,7 +24,7 @@ export default function Contact(){
                     <input type="email" className=" w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu" placeholder="Enter your  email here"/>
                     <input type="number" className=" w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu" placeholder="Enter your mobile number here"/>
                 </div>
-                <textarea name="" id="" className="w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu" placeholder="Enter your message" row="4"></textarea>
+                {/* <textarea name="" id="" className="w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu" placeholder="Enter your message" row="4"></textarea> */}
                 <button className=" bg-limegreen px-6 text-black hover:bg-white py-4 w-full rounded-md font-bold text-md font-ubuntutransform hover:scale-105 transition duration-300 cursor-pointer">Submit Now</button>
                 </div>
             </div>

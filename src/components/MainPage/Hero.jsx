@@ -1,5 +1,3 @@
-import herobanner from "../../assets/ImageMain/herobanner.png";
-import clients from "../../assets/ImageMain/clients.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -61,8 +59,8 @@ export default function Hero() {
     >
       <div className="container pb-8 sm:pd-0">
         <Slider {...settings}>
-          {ImageList.map((data) => (
-            <div>
+          {ImageList.map((data, index) => (
+            <div key={index} className="">
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 z-10  text-gray-900">
                   <h1
@@ -70,26 +68,24 @@ export default function Hero() {
                     data-aos-duration="500"
                     data-aos-once="true"
                     className="text-5xl sm:text-6xl
-                       lg:text-7xl font-bold "
+                 lg:text-7xl font-bold "
                   >
                     {data.title}
                   </h1>
                   <p
                     data-aos="zoom-out"
                     data-aos-duration="500"
-                    data-aos-daley="100"
-                    className="text-sm "
+                    data-aos-delay="100"
+                    className="text-sm"
                   >
                     {data.description}
                   </p>
                   <div
                     data-aos="fade-up"
                     data-aos-duration="500"
-                    data-aos-daley="300"
+                    data-aos-delay="300"
                   >
-                    <button
-                      className=" ml-2 bg-limegreen font-ubuntu hover:bg-white text-black px-8 py-2 rounded-full  transform hover:scale-105 transition duration-300 cursor-pointer outline-none "
-                    >
+                    <button className=" ml-2 bg-limegreen font-ubuntu hover:bg-white text-black px-8 py-2 rounded-full  transform hover:scale-105 transition duration-300 cursor-pointer outline-none ">
                       เพิ่มเติม
                     </button>
                   </div>
@@ -104,17 +100,15 @@ export default function Hero() {
                       src={data.img}
                       alt=""
                       className="w-[325px] h-[325px] sm:h-[400px] sm:w-[470px] sm:scale-105
-                         lg:scale-120  object-contain mx-auto"
+                   lg:scale-120  object-contain mx-auto"
                     />
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </Slider>      
-      </div>      
+        </Slider>
+      </div>
     </section>
-
-    
   );
 }
