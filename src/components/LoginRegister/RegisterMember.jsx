@@ -56,7 +56,7 @@ const RegisterMember = () => {
                 htmlFor=""
                 className="absolute text-xm font-semibold text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-800 peer-focus:dark:text-gray-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
               >
-                Number :
+                Phone Number :
               </label>
             </div>
             <div className="relative my-6">

@@ -24,11 +24,11 @@ export default function Services() {
             <div data-aos="zoom-in" data-aos-delay="600" className=" w-full flex lg:flex-row flex-col justify-between items-center gap-10 mt-3 ">
                 {
                     pricingplan.map((item,index) =>(
-                        <div key={index} className=" bg-black p-10 rounded-3xl flex flex-col justify-center items-start gap-3 lg:w-[35%] w-full hover:scale-105 transition duration-300 cursor-pointer  hover:bg-gray-900 ">
-                            <h1 className=" text-white text-4xl font-semibold font-ubuntu">{item.type}</h1>
+                        <div key={index} className=" w-50 p-5 rounded-xl flex flex-col justify-center items-start gap-3 lg:w-[35%] w-full hover:scale-105 transition duration-300 cursor-pointer bg-custom drop-shadow-md"style={{ backgroundImage: `url(${item.img})`,backgroundSize: 'cover',backgroundRepeat: 'no-repeat', width: '100%',height: '300px',position: 'relative',boxShadow: '0 10px 6px rgba(0, 0, 0, 0.1)' }}>
+                            <h1 className="absolute top-2 text-white text-5xl font-bold  font-ubuntu">{item.type}</h1>
                             {/* <p className=" text-white text-lg font-ubuntu">{item.about}</p> */}
                             {/* <h1 className=" text-limegreen font-bold text-[55px] font-ubuntu">{item.price}<span className=" text-limegreen text-lg pl-2 font-ubuntu">Monthly</span></h1> */}
-                            <button className=" w-full bg-limegreen font-semibold rounded-xl px-6 py-3 text-lg hover:bg-white hover:text-black font-ubuntu">{item.label}</button>
+                            
                             <p className=" text-white text-lg font-semibold font-ubuntu">{item.specs}</p>
                             <div className=" flex flex-col justify-center items-start gap-4">
                                 
