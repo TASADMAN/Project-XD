@@ -1,7 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import Img1 from "../../assets/shirt/S001.jpg";
-import Img2 from "../../assets/shirt/S004.jpg";
-import Img3 from "../../assets/shirt/S002.jpg";
+import Img3 from "../../assets/shirt/S004.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -9,43 +7,43 @@ import { useEffect } from "react";
 const ProductsData = [
   {
     id: 1,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 2,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 3,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 4,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 5,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 6,
-    img: Img1,
+    img: Img3,
     title: "Manchester United",
     description: "600/ชม.",
   },
 ];
 
-export default function About() {
+export default function About3() {
   useEffect(() => {
     AOS.init({
       offset: 200,
@@ -64,7 +62,7 @@ export default function About() {
             Top Stadium for you
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Select a stadium
+            Select a stadium : FOOTSAL
           </h1>
         </div>
 

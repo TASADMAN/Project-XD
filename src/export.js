@@ -52,26 +52,17 @@ export const pricingplan = [
   {
     type: "Basketball",
     img: IMG_Bas,
-    // about: "Perfect choice for individual",
-    // price: "$29.00",
-    // label: "Get Start now",
-    // specs: "Lite includes:",
+
   },
   {
     type: "Football",
     img: IMG_Ball,
-    // about: "Everything in pro, plus",
-    // price: "$39.00",
-    // label: "Get Start now",
-    // specs: "Everything in lite, plus:",
+    
   },
   {
     type: "Futsal",
     img: IMG_Footsal,
-    // about: "Perfect choice for hard players",
-    // price: "$49.00",
-    // label: "Get Start now",
-    // specs: "Everything in pro, plus:",
+    
   },
 ];
 

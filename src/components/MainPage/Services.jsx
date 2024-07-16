@@ -1,12 +1,11 @@
 import { useEffect } from "react";
-// import { FaArrowRight } from "react-icons/fa";
+import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../export.js";
-// import { servicesinfo } from "../../export.js";
-import { FaChevronCircleRight } from "react-icons/fa";
 import { pricingplan } from "../../export";
 export default function Services() {
+  
   useEffect(() => {
     AOS.init({
       offset: 200,
