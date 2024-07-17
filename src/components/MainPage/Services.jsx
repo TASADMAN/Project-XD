@@ -16,9 +16,9 @@ export default function Services() {
     });
   }, []);
   return (
-    <div>
+    
     <section id="services" className="w-[90%] m-auto flex flex-col justify-between items-center gap-2 py-5">
-        <h1 data-aos="zoom-in" data-aos-delay="400" className="font-bold lg:text-[50px] text-[50px] lg:leading-[70px] leading-[50px] text-center text-black">Select Your Sport</h1>
+        {/* <h1 data-aos="zoom-in" data-aos-delay="400" className="font-bold lg:text-[50px] text-[50px] lg:leading-[70px] leading-[50px] text-center text-black">Select Your Sport</h1>
         <div data-aos="zoom-in" data-aos-delay="600" className="w-full flex lg:flex-row flex-col justify-between items-center gap-10 mt-3">
           {pricingplan.map((item, index) => (
             <Link key={index} to={`/about${index + 1}`} className="relative w-full  lg:w-[35%] h-[300px] p-5 flex flex-col rounded-xl  overflow-hidden hover:scale-105 transition duration-300 cursor-pointer drop-shadow-md ">
@@ -29,15 +29,9 @@ export default function Services() {
           </Link>
           
           ))}
-        </div>
+        </div> */}
       </section>
 
-      <Routes>
-        <Route path="/" element={<About2 />} />
-        <Route path="/about1" element={<About />} />
-        <Route path="/about2" element={<About2 />} />
-        <Route path="/about3" element={<About3 />} />
-      </Routes>
-      </div>
+      
   );
 }
