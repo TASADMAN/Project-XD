@@ -48,7 +48,7 @@ const ProductsData = [
 export default function About() {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 90,
       duration: 400,
       easing: "ease-in-sine",
     });
