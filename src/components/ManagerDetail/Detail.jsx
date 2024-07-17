@@ -5,6 +5,7 @@ import Location from "./Location"
 import Comment1 from "./Comment1";
 import FieldMain from "./FieldMain";
 import Field  from "./Field";
+import Footer from "./Footer";
 // import Local from "./Local";
 
 
@@ -17,8 +18,8 @@ export default function Detail(){
         <FieldMain/>
         <Field/>
         <Location/>
-        {/* <Local /> */}
         <Comment1/>
+        <Footer />
         </>
     );
 }

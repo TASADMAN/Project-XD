@@ -9,7 +9,6 @@ import LoginPage from './components/LoginPage/MainPage'; // Corrected import
 import EditeProfile from './components/EditeProfile/EditeProfile';
 import ManagerDetail from './components/ManagerDetail/Detail';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Hisroty_main from './components/History/History_Main';
 import Ecommerce from './components/Ecommerce/ecommerce';
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route path="/loginpage" element={<LoginPage />} />
           <Route path="/editeProfile" element={<EditeProfile />} />
           <Route path="/managerdetail" element={<ManagerDetail />} />
-          <Route path="/history" element={<Hisroty_main/>} />
           <Route path="/ecommerce" element={<Ecommerce/>} />
           {/* Default route */}
           <Route path="*" element={<MainPage/>} />

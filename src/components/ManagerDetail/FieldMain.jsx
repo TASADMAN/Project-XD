@@ -1,9 +1,6 @@
 
-
 import Img1 from "../../assets/ImageField/field1.jpg";
-// import Img2 from "../../assets/ImageField/field2.jpg";
-// import Img3 from "../../assets/ImageField/field3.jpg";
-// import Img4 from "../../assets/ImageField/field4.jpg";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,8 +16,8 @@ export default function FieldMain() {
     });
   }, []);
   return (
-    <section>
-      <div className="container py-5">
+    <section  className="">
+      <div className="container">
       <h1 data-aos="zoom-in" data-aos-delay="100" className="font-bold lg:text-[50px] text-[50px] lg:leading-[70px] leading-[50px] text-center text-black">About</h1>
       <div data-aos="zoom-in" data-aos-delay="100"  className="grid grid-cols-1 lg:grid-cols-1 ">
             <div className="relative lg:h-[560px] h-[300px] ">

@@ -6,6 +6,9 @@ import product3 from "../../assets/IMG_ecommerce/F003.png";
 import product4 from "../../assets/IMG_ecommerce/F004.png";
 import product5 from "../../assets/IMG_ecommerce/F005.png";
 import product6 from "../../assets/IMG_ecommerce/F006.png";
+import Header from "../Ecommerce/Header";
+import Footer from "./Footer";
+import Hero from "./Hero";
 
 const ImageList = [
   {
@@ -58,8 +61,11 @@ const ImageList = [
   },
 ];
 
-function ecommerce() {
+ export default function ecommerce() {
   return (
+    <>
+    <Header />
+    <Hero />
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <Typewriter />
       <div className="px-4 mx-auto sm:px-4 lg:px-8 max-w-[90rem]">
@@ -98,7 +104,7 @@ function ecommerce() {
               <div className="overflow-hidden aspect-w-1 aspect-h-1 rounded-t-xl  bg-gray-100">
                 <div className="group">
                   <img
-                    className="w-full h-[340px] object-fit  object-cover  transition-all duration-300 group-hover:scale-125"
+                    className="w-auto h-[350px] object-fill   transition-all duration-300 group-hover:scale-125"
                     src={data.img}
                     alt="Descriptive text"
                   />
@@ -249,7 +255,9 @@ function ecommerce() {
         </a>
       </div>
     </section>
+    <Footer />
+    </>
+    
   );
 }
 
-export default ecommerce;
