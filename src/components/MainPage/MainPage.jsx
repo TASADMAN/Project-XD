@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./Header";
 import Hero from "./Hero";
 import Services from "./Services";
@@ -9,11 +10,11 @@ import Pricing from "./Pricing";
 import Clients from "./Clients";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 export default function MainPage() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Hero />
       <Services />
@@ -32,6 +33,6 @@ export default function MainPage() {
       <Clients />
       <Contact />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
