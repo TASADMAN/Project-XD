@@ -1,13 +1,10 @@
-import herobanner from "../../assets/ImageMain/herobanner.png";
-import clients from "../../assets/ImageMain/clients.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Slider from "react-slick";
+
 import Image1 from "../../assets/ImageLogin/BBS.jpg";
-import { TbBackground } from "react-icons/tb";
-import React from "react";
-import { MdHeight } from "react-icons/md";
+
 
 
 const BgStyle = {

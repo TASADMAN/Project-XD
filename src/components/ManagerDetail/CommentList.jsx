@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { CommentContext } from "./CommentContext";
 
 const CommentList = () => {
@@ -51,16 +51,16 @@ const CommentList = () => {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       {comments.map((comment) => (
-        <div key={comment.id} className="p-4 border border-gray-500 rounded-md">
+        <div key={comment.id} className="p-6 border border-gray-500 drop-shadow-md rounded-md bg-white ">
           <div className="flex justify-between">
-            <h3 className="font-bold text-gray-400">{comment.username}</h3>
-            <div className="flex space-x-2 ">
-              <div className=" inline-flex  overflow-hidden rounded-md border bg-white shadow-sm ">
+            <h3 className="font-bold text-gray-500 underline">{comment.username}</h3>
+            <div className="flex lg:space-x-8 space-x-0 ">
+              <div className=" inline-flex  overflow-hidden rounded-md border bg-white shadow-sm  ">
                 <button
                   onClick={() => handleLike(comment.id)}
-                  className={`inline-flex border-e p-3  cursor-pointer text-gray-700 hover:bg-pink-600 focus:relative 
+                  className={`inline-flex  lg:border-e p-2  cursor-pointer text-black hover:bg-pink-600 focus:relative 
                     
                   
                   ${likedComments.includes(comment.id) ? "font-semibold" : ""}`}
@@ -82,12 +82,12 @@ const CommentList = () => {
                       d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
                     />
                   </svg>
-                  <div className="mr-2 text-end">{comment.likes}</div>
+                  <div className="mr-2  flexitems-center">{comment.likes}</div>
                 </button>
                 
                 <button
                   onClick={() => handleDislike(comment.id)}
-                  className={`inline-flex cursor-pointer border-e p-3 text-gray-700 hover:bg-yellow-500 focus:relative
+                  className={`inline-flex cursor-pointer  lg:border-e p-2 text-black hover:bg-yellow-500 focus:relative
                     ${
                       dislikedComments.includes(comment.id)
                         ? "font-semibold"
@@ -118,7 +118,7 @@ const CommentList = () => {
                     setEditMode(comment.id);
                     setEditedComment(comment.body);
                   }}
-                  className="inline-block border-e p-3 text-gray-700 hover:bg-gray-100 focus:relative"
+                  className="inline-block border-e p-3 text-black hover:bg-gray-100 focus:relative"
                   
                 >
                   <svg
@@ -139,7 +139,7 @@ const CommentList = () => {
 
                 <button
                   onClick={() => deleteComment(comment.id)}
-                  className="inline-block p-3 text-gray-700 hover:bg-red-500  focus:relative"
+                  className="inline-block p-3 border text-gray-700 hover:bg-red-500  focus:relative"
                 
                 >
                   <svg
@@ -165,20 +165,20 @@ const CommentList = () => {
               <textarea
                 value={editedComment}
                 onChange={handleEditChange}
-                className="block w-full p-2 border border-gray-300 rounded-md"
+                className="block w-full p-3 border border-gray-300 rounded-md"
                 rows="6"
                 required
               ></textarea>
               <div className="flex space-x-2 mt-2">
                 <button
                   onClick={() => handleEditSubmit(comment.id)}
-                 className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-teal-600 transform transition-transform duration-200 hover:scale-110"
+                 className="py-2.5 px-6 rounded-lg text-sm font-medium text-white bg-black transform transition-transform duration-200 hover:scale-110"
                 >
                   Save
                 </button>
                 <button
                   onClick={handleCancelEdit}
-                  className="py-2.5 px-6 rounded-lg text-sm font-medium bg-teal-200 text-teal-800  transform transition-transform duration-200 hover:scale-110"
+                  className="py-2.5 px-6 rounded-lg text-sm font-medium bg-black/70 text-white  transform transition-transform duration-200 hover:scale-110"
                 >
                   Cancel
                 </button>
@@ -186,7 +186,7 @@ const CommentList = () => {
             </div>
           ) : (
             <>
-              <p className="text-white mb-3 break-words whitespace-pre-wrap">
+              <p className="text-black mb-3 break-words whitespace-pre-wrap">
                 {comment.body}
               </p>
               <p className="text-gray-400 text-sm mt-1 ">

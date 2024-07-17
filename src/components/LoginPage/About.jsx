@@ -1,9 +1,9 @@
-import about from "../../assets/ImageMain/about.png";
+// import about from "../../assets/ImageMain/about.png";
 import { FaStar } from "react-icons/fa";
 import Img1 from "../../assets/shirt/S001.jpg";
 import Img2 from "../../assets/shirt/S004.jpg";
 import Img3 from "../../assets/shirt/S002.jpg";
-import { FaChevronCircleRight } from "react-icons/fa";
+// import { FaChevronCircleRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -73,6 +73,7 @@ export default function About() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[100px]  md:gap-5 place-items-center ">
           {ProductsData.map((data) => (
             <div
+              key={data}
               data-aos="zoom-in"
               className="rounded-2xl px-20  hover:bg-black
              dark:hover:bg-limegreenm hover:text-white ralative  shadow-xl duration-300 group max-w-[480px]  mb-[170px]"
@@ -98,44 +99,52 @@ export default function About() {
                 >
                   {data.description}
                 </p>
-
-                <div class="flex gap-3 items-center text-center  place-items-center mb-4">
-                  <label class="  block text-black group-hover:text-white font-bold mb-2">
+                <div className="flex gap-3 items-center text-center  place-items-center mb-4">
+                  <label className="  block text-black group-hover:text-white font-bold mb-2">
                     Stadium:
                   </label>
-                  <div class=" items-center mb-2">
+                  <div className=" items-center mb-2">
                     <input
                       type="radio"
                       id="option1"
                       name="options"
-                      value="1"
-                      class=" text-limegreen h-4 w-4 mr-2"
+                      defaultValue={1}
+                      className=" text-limegreen h-4 w-4 mr-2"
                     />
-                    <label for="option1" class="text-black group-hover:text-white">
+                    <label
+                      htmlFor="option1"
+                      className="text-black group-hover:text-white"
+                    >
                       1
                     </label>
                   </div>
-                  <div class=" items-center mb-2">
+                  <div className=" items-center mb-2">
                     <input
                       type="radio"
                       id="option2"
                       name="options"
-                      value="2"
-                      class="text-limegreen h-4 w-4 mr-2"
+                      defaultValue={2}
+                      className="text-limegreen h-4 w-4 mr-2"
                     />
-                    <label for="option2" class="text-black group-hover:text-white">
+                    <label
+                      htmlFor="option2"
+                      className="text-black group-hover:text-white"
+                    >
                       2
                     </label>
                   </div>
-                  <div class=" items-center mb-2">
+                  <div className=" items-center mb-2">
                     <input
                       type="radio"
                       id="option2"
                       name="options"
-                      value="3"
-                      class="text-limegreen h-4 w-4 mr-2"
+                      defaultValue={3}
+                      className="text-limegreen h-4 w-4 mr-2"
                     />
-                    <label for="option2" class="text-black group-hover:text-white">
+                    <label
+                      htmlFor="option2"
+                      className="text-black group-hover:text-white"
+                    >
                       3
                     </label>
                   </div>
