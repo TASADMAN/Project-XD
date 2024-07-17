@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import{ createContext, useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 export const CommentContext = createContext();

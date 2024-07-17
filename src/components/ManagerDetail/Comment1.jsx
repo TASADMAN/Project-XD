@@ -15,9 +15,9 @@ export default function Comment1() {
   }, []);
   return (
     <CommentContextProvider>
-      <div data-aos="zoom-in" data-aos-delay="20" className="container mx-auto p-4 bg-gray-950 rounded-xl ">
-        <h1 className="text-3xl font-bold mb-4 text-white">Comments</h1>
-        <div className="block rounded-xl border border-gray-800 p-4 font-medium text-md">
+      <div data-aos="zoom-in" data-aos-delay="400" className="mt-[5rem] container mx-auto p-4 bg-white rounded-xl ">
+        <h1 className="text-3xl font-bold mb-4 text-black">Comments</h1>
+        <div className="block rounded-xl border border-gray-300 p-4 font-medium text-md">
         
           <CommentForm />
           <CommentList />

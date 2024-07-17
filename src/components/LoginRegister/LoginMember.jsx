@@ -61,10 +61,16 @@ const LoginMember = () => {
               </div>
             </div>
             <button
-              className="w-full mb-4 text-[18px] font-bold mt-6 rounded-full bg-white text-emerald-800 hover:text-white hover:bg-emerald-400 py-2  duration-200  transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
+              className="w-full  text-[18px] font-bold mt-6 rounded-full bg-white text-emerald-800 hover:text-white hover:bg-emerald-400 py-2  duration-200  transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
               type="submit"
             >
               Sign In <Link to='/mainpage'></Link>
+            </button>
+            <button
+              className="w-full mb-4 text-[18px] font-bold mt-6 rounded-full bg-white text-emerald-800 hover:text-white hover:bg-emerald-400 py-2  duration-200  transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
+              type="submit"
+            >
+              Sign Member <Link to='/mainpage'></Link>
             </button>
             <div>
               <span>

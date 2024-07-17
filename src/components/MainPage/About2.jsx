@@ -74,7 +74,7 @@ export default function About2() {
             <div
               key={data.id}
               data-aos="zoom-in"
-              className="rounded-2xl px-20 hover:bg-black dark:hover:bg-limegreen hover:text-white ralative shadow-xl duration-300 group max-w-[480px] mb-[170px]"
+              className="rounded-2xl px-20 hover:bg-black hover:text-white ralative shadow-xl duration-300 group max-w-[480px] mb-[170px]"
             >
               <div className="h-[100px] mb-[60px]">
                 <img

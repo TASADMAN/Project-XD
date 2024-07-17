@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import imageLogo2 from "../../assets/ImageLogo/imageLogo2.png";
 import imageProfile from "../../assets/ImageProfile/imageProfile.avif";
-import { GiClick } from "react-icons/gi";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

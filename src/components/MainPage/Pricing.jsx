@@ -1,8 +1,8 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { FaChevronCircleRight } from "react-icons/fa";
-import { pricingplan } from "../../export";
+// import { FaChevronCircleRight } from "react-icons/fa";
+// import { pricingplan } from "../../export";
 export default function Pricing(){
     useEffect(() =>{
         AOS.init({

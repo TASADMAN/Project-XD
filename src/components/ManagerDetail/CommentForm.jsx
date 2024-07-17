@@ -19,17 +19,17 @@ const CommentForm = () => {
         placeholder="แสดงความคิดเห็น"
         value={comment}
         onChange={(e) => setComment(e.target.value)}
-        className="block w-full p-2 mb-2 border border-gray-300 rounded-md  font-medium text-md"
+        className="block w-full p-2 mb-2 border border-gray-200 rounded-md  font-medium text-md"
         rows="8"
         required
         aria-label="Comment"
       ></textarea>
       <button className="relative inline-flex  group mt-5 mb-5" >
-        <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d2e2ee] via-[#FF4] to-[#38dc8c] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt" />
+        <div className="absolute  -inset-px  rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt" />
         <a
           type="Submit"
           title="Get quote now"
-          className="relative inline-flex items-center justify-center px-4 py-3 text-lg font-semibold text-gray-800 transition-all duration-200 bg-lime-300 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring--900"
+          className="relative inline-flex items-center  transform  hover:scale-110 justify-center px-4 py-3 text-lg font-semibold text-white transition-all duration-200 bg-black font-ubuntu rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring--900"
         >
           Confirm
         </a>
