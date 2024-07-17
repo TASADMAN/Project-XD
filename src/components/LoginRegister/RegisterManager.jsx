@@ -15,7 +15,7 @@ const RegisterManager = () => {
       <img
         src={imglogin}
         alt=""
-        className="absolute w-full h-full object-cover mix-blend-color-burn"
+        className=" absolute w-full h-full object-cover mix-blend-color-burn"
       />
       <div className="">
         <div className="bg-gray-900 border border-gray-400 rounded-md sm:px-[79px] sm:py-[10px] px-[50px] shadow-lg  sm:backdrop-blur-lg backdrop-blur-0  bg-opacity-20 relative">
@@ -64,6 +64,19 @@ const RegisterManager = () => {
             </div>
             <div className=" pb-2 relative my-6">
               <input
+                type="email"
+                className="block w-72 py-2 px-1 text-md font-semibold text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-gray-800 focus:outline-none focus:ring-0 focus:text-white focus:border-gray-800 peer "
+                placeholder=""
+              />
+              <label
+                htmlFor=""
+                className="absolute text-xm font-semibold text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-800 peer-focus:dark:text-gray-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              >
+                Identification Card :
+              </label>
+            </div>
+            <div className=" pb-2 relative my-6">
+              <input
                 type="tel"
                 className=" block w-72 py-2 px-1 text-md font-semibold text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-gray-800 focus:outline-none focus:ring-0 focus:text-white focus:border-gray-800 peer "
                 placeholder=""
@@ -73,6 +86,32 @@ const RegisterManager = () => {
                 className=" absolute text-xm font-semibold text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-800 peer-focus:dark:text-gray-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
               >
                 Phone Number :
+              </label>
+            </div>
+            <div className=" pb-2 relative my-6">
+              <input
+                type="tel"
+                className=" block w-72 py-2 px-1 text-md font-semibold text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-gray-800 focus:outline-none focus:ring-0 focus:text-white focus:border-gray-800 peer "
+                placeholder=""
+              />
+              <label
+                htmlFor=""
+                className=" absolute text-xm font-semibold text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-800 peer-focus:dark:text-gray-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              >
+                Bank Account Number :
+              </label>
+            </div>
+            <div className="relative my-6">
+              <input
+                type="password"
+                className="block w-72 py-2 text-md px-1 font-semibold text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-gray-800 focus:outline-none focus:ring-0 focus:text-white focus:border-gray-800 peer"
+                placeholder=""
+              />
+              <label
+                htmlFor=""
+                className="absolute text-xm font-semibold  text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-800 peer-focus:dark:text-gray-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"
+              >
+                User Name :
               </label>
             </div>
             <div className="relative my-6">
