@@ -18,7 +18,7 @@ import { pricingplan } from "../../export";
 export default function MainPage() {
   useEffect(() => {
     AOS.init({
-      offset: 90,
+      offset: 150,
       duration: 400,
       easing: "ease-in-sine",
     });
@@ -32,9 +32,9 @@ export default function MainPage() {
         <h1 data-aos="zoom-in" data-aos-delay="400" className="font-bold lg:text-[50px] text-[50px] lg:leading-[70px] leading-[50px] text-center text-black">Select Your Sport</h1>
         <div data-aos="zoom-in" data-aos-delay="600" className="w-full flex lg:flex-row flex-col justify-between items-center gap-10 mt-3">
           {pricingplan.map((item, index) => (
-            <Link key={index} to={`/about${index + 1}`} className="relative w-full h-48 p-5 rounded-xl overflow-hidden hover:scale-105 transition duration-300 cursor-pointer shadow-lg block  border-4 border-white">
+            <Link key={index} to={`/about${index + 1}`} className="relative w-full h-[250px] p-5 rounded-xl overflow-hidden hover:scale-105 transition duration-300 cursor-pointer shadow-lg block  border-4 border-white">
             <div className="absolute inset-0 z-0 bg-cover bg-no-repeat" style={{ backgroundImage: `url(${item.img})` }}></div>
-            <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 hover:bg-opacity-70 transition duration-300">
+            <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white  bg-opacity-50 hover:bg-opacity-70 transition duration-100">
               <h1 className="absolute top-2 text-white text-5xl font-bold  font-ubuntu">{item.type}</h1>
               <p className="text-white text-lg font-semibold font-ubunt">{item.specs}</p>
             </div>

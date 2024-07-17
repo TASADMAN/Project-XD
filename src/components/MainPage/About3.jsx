@@ -1,5 +1,7 @@
 import { FaStar } from "react-icons/fa";
-import Img3 from "../../assets/shirt/S004.jpg";
+import Img1 from "../../assets/shirt/S009.jpg";
+import Img2 from "../../assets/shirt/S010.jpg";
+import Img3 from "../../assets/shirt/S011.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -7,13 +9,13 @@ import { useEffect } from "react";
 const ProductsData = [
   {
     id: 1,
-    img: Img3,
+    img: Img1,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 2,
-    img: Img3,
+    img: Img2,
     title: "Manchester United",
     description: "600/ชม.",
   },
@@ -25,13 +27,13 @@ const ProductsData = [
   },
   {
     id: 4,
-    img: Img3,
+    img: Img1,
     title: "Manchester United",
     description: "600/ชม.",
   },
   {
     id: 5,
-    img: Img3,
+    img: Img2,
     title: "Manchester United",
     description: "600/ชม.",
   },
@@ -46,7 +48,7 @@ const ProductsData = [
 export default function About3() {
   useEffect(() => {
     AOS.init({
-      offset: 90,
+      offset: 150,
       duration: 400,
       easing: "ease-in-sine",
     });
