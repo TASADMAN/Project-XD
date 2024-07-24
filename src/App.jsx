@@ -10,6 +10,7 @@ import EditeProfile from './components/EditeProfile/EditeProfile';
 import ManagerDetail from './components/ManagerDetail/Detail';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Ecommerce from './components/Ecommerce/ecommerce';
+import Payment from './components/Payment/Payment';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/editeProfile" element={<EditeProfile />} />
           <Route path="/managerdetail" element={<ManagerDetail />} />
           <Route path="/ecommerce" element={<Ecommerce/>} />
+          <Route path='/payment' element={<Payment />} />
           {/* Default route */}
           <Route path="*" element={<MainPage/>} />
           
