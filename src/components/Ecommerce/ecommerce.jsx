@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Typewriter from "./Typewriter";
 import product1 from "../../assets/IMG_ecommerce/F001.png";
 import product2 from "../../assets/IMG_ecommerce/F002.png";
@@ -6,7 +6,7 @@ import product3 from "../../assets/IMG_ecommerce/F003.png";
 import product4 from "../../assets/IMG_ecommerce/F004.png";
 import product5 from "../../assets/IMG_ecommerce/F005.png";
 import product6 from "../../assets/IMG_ecommerce/F006.png";
-import Header from "../Ecommerce/Header";
+import Header from "../Ecommerce/Header.jsx"
 import Footer from "./Footer";
 import Hero from "./Hero";
 
@@ -80,9 +80,10 @@ const ImageList = [
               <span className=" sm:block"> stadium </span>
             </li>
 
-            <li className="flex items-center gap-2 bg-white p-2">
-              <span className="size-6 rounded-full bg-lime-500 text-center text-[10px]/6 font-bold text-white">
-                2
+            <li className="flex items-center gap-2 bg-white p-2 ">
+              <span className="size-6 rounded-full  bg-gray-100  text-center text-[10px]/6 font-bold text-gray-500  border-2 border-limegreen">
+              {" "}
+                2{" "}
               </span>
 
               <span className=" sm:block"> product </span>

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 
 const Typewriter = () => {
-  const words = ["Welcome to my store.. "];
+  const words = ["Payment and Detil "];
   const [currentWord, setCurrentWord] = useState('');
   const [j, setJ] = useState(0);
 
