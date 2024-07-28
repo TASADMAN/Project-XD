@@ -11,6 +11,7 @@ import ManagerDetail from './components/ManagerDetail/Detail';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Ecommerce from './components/Ecommerce/ecommerce';
 import Payment from './components/Payment/Payment';
+import Booking from './components/Booking/Calendar'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/managerdetail" element={<ManagerDetail />} />
           <Route path="/ecommerce" element={<Ecommerce/>} />
           <Route path='/payment' element={<Payment />} />
+          <Route path='/booking' element={<Booking />} />
           {/* Default route */}
           <Route path="*" element={<MainPage/>} />
           
